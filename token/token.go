@@ -4,7 +4,7 @@ const (
 	ILLEGAL = "ILLEGAL"
 	EOF     = "EOF"
 
-	// Identifiers + literals
+	// Identifiers + literals (variable names and numbers)
 	IDENT = "IDENT" // add, foobar, x, y etc.
 	INT   = "INT"   // 123456
 
@@ -43,7 +43,8 @@ const (
 type TokenType string
 
 type Token struct {
-	Type    TokenType
+	Type TokenType
+	// Literal is the value of the token (e.g. let, 5, func etc.)
 	Literal string
 }
 
