@@ -3,6 +3,8 @@ package lexer
 import "github.com/K1ngArtes/monkey-lang-interpreter-go/token"
 
 // Lexer supports only ASCII characters. It assumes that characters are one byte large for simplicity’s sake.
+// Lexer reads the source code and converts it into a set of tokens. It goes through the source text and
+// builds tokens one-by-one using NextToken method.
 type Lexer struct {
 	input        string
 	position     int  // current position in input (points to current char)
