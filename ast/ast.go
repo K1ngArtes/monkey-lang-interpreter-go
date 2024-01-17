@@ -3,6 +3,7 @@ package ast
 import "github.com/K1ngArtes/monkey-lang-interpreter-go/token"
 
 type Node interface {
+	// TokenLiteral return the value of the token
 	TokenLiteral() string
 }
 

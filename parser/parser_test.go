@@ -17,7 +17,7 @@ func TestLetStatement(t *testing.T) {
 	p := New(l)
 
 	program := p.ParseProgram()
-	if program != nil {
+	if program == nil {
 		t.Fatalf("ParseProgram() returned nil!")
 	}
 
