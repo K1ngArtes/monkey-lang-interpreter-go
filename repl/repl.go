@@ -10,6 +10,7 @@ import (
 
 const PROMPT = ">> "
 
+// Start starts REPL (Read Eval Print Loop) of accepting the user commands and printing back a set tokens doe this command
 func Start(in io.Reader, out io.Writer) {
 	scanner := bufio.NewScanner(in)
 
