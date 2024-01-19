@@ -43,6 +43,7 @@ type Identifier struct {
 	Value string
 }
 
+// TokenLiteral is the name of the variable in the code
 func (i *Identifier) TokenLiteral() string {
 	return i.Token.Literal
 }
