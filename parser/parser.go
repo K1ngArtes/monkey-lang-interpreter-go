@@ -26,6 +26,7 @@ func New(l *lexer.Lexer) *Parser {
 	return p
 }
 
+// Errors returns errors for each of the lines during the parsing
 func (p *Parser) Errors() []string {
 	return p.errors
 }
